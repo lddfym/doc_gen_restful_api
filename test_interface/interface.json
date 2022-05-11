@@ -1,0 +1,30 @@
+[
+    {
+    "headline": "创建资源",
+    "request": {
+      "method": "POST",
+      "address": "http://hostname/resource/create",
+      "header": {
+        "Content-Type": "application/json",
+        "Cookie": ""
+      },
+      "body": {
+        "name": "test||名字",
+        "size": "1024|number|大小",
+        "address": "http://path.zip||url地址",
+        "md5": "abc||md5",
+        "version": "1|number|版本"
+      }
+    },
+    "response": {
+      "body": {
+        "err_no": "0|number|错误码",
+        "err_msg": "success||错误描述",
+        "log_id": "123456||日志id",
+        "data": {
+          "id": "1|number|资源id"
+        }
+      }
+    }
+  }
+]
